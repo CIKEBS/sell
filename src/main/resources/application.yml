@@ -3,12 +3,13 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     username: root
     password: 123456
-    url: jdbc:mysql://127.0.0.1/takeout?characterEncoding=utf8&useSSL=false
+    url: jdbc:mysql://127.0.0.1:3306/takeout?characterEncoding=utf8&useSSL=false
   jpa:
     show-sql: true
 server:
   servlet:
     context-path: /sell
+  port: 8090
 logging:
   pattern:
     console: "%d - %msg%n"
