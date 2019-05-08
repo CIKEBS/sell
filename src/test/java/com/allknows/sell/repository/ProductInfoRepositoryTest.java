@@ -26,14 +26,14 @@ public class ProductInfoRepositoryTest {
     @Test
     public void saveTest(){
         ProductInfo productInfo = new ProductInfo();
-        productInfo.setProductId("123456");
-        productInfo.setProductName("皮蛋瘦肉粥");
-        productInfo.setProductPrice(new BigDecimal(3.2));
-        productInfo.setProduct_stock(100);
-        productInfo.setProductDescription("横好喝");
+        productInfo.setProductId("123457");
+        productInfo.setProductName("卡布奇诺");
+        productInfo.setProductPrice(new BigDecimal(23.2));
+        productInfo.setProductStock(200);
+        productInfo.setProductDescription("hin好喝");
         productInfo.setProductIcon("http://xxxx.jpg");
         productInfo.setProductStatus(0);
-        productInfo.setCategoryType(2);
+        productInfo.setCategoryType(1);
 
         ProductInfo info = repository.save(productInfo);
         Assert.assertNotNull(info);

@@ -47,11 +47,11 @@ public class ProductServiceImplTest {
         productInfo.setProductId("123457");
         productInfo.setProductName("皮皮虾");
         productInfo.setProductPrice(new BigDecimal(3.2));
-        productInfo.setProduct_stock(100);
+        productInfo.setProductStock(100);
         productInfo.setProductDescription("横好吃");
         productInfo.setProductIcon("http://xxxx.jpg");
         productInfo.setProductStatus(ProductStatusEnum.Down.getCode());
-        productInfo.setCategoryType(2);
+        productInfo.setCategoryType(15);
         ProductInfo save = productService.save(productInfo);
         Assert.assertNotNull(save);
     }

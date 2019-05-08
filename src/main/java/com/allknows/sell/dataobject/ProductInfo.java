@@ -4,12 +4,14 @@ import lombok.Data;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 import java.math.BigDecimal;
 import java.util.Date;
 
 /**
  * 商品
  */
+@Table(name = "product_info")
 @Entity
 @Data
 public class ProductInfo {
@@ -26,7 +28,7 @@ public class ProductInfo {
     /**
      * 库存
      */
-    private Integer product_stock;
+    private Integer productStock;
     /**
      * 描述
      */
